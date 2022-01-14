@@ -4,7 +4,7 @@
 const num=5;
 const min=1;
 const max=10;
-const nom_archivo=`Tabla-${num}.txt`;
+let nom_archivo=`Tabla-${num}.txt`;
 
 let fs = require('fs');
 
@@ -17,5 +17,23 @@ for(let i=min; i<=max; i++){
 
 console.log("Generado "+nom_archivo+" en " + __dirname);
 
-fs.writeFile(nom_archivo, tabla, (e) => { if(e) {console.log("Se produjo un error:" + e)}});
+let grabar = function(nom) {
+    let nombre=nom
 
+    fs.writeFile(nombre, tabla, (e) => { 
+    
+        if(e) 
+            console.log("Se produjo un error:" + e)
+        else 
+            setTimeout(() => {console.log(nombre + " generado")},3000);})
+}
+
+
+console.log(nom_archivo);
+
+grabar(nom_archivo);
+grabar("01_"+nom_archivo);
+grabar("02_"+nom_archivo);
+
+nom_archivo="OTRONOMBRE"
+console.log(nom_archivo);
