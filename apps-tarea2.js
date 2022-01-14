@@ -15,8 +15,6 @@ for(let i=min; i<=max; i++){
     tabla = tabla.concat(fila, "\n");
 }
 
-console.log("Generado "+nom_archivo+" en " + __dirname);
-
 let grabar = function(nom) {
     let nombre=nom
 
