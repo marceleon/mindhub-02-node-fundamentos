@@ -15,10 +15,10 @@ for(let i=min; i<=max; i++){
     tabla = tabla.concat(fila, "\n");
 }
 
-let grabar = function(nom) {
+let grabar = function(nom, txt) {
     let nombre=nom
 
-    fs.writeFile(nombre, tabla, (e) => { 
+    fs.writeFile(nombre, txt, (e) => { 
     
         if(e) 
             console.log("Se produjo un error:" + e)
@@ -29,9 +29,9 @@ let grabar = function(nom) {
 
 console.log(nom_archivo);
 
-grabar(nom_archivo);
-grabar("01_"+nom_archivo);
-grabar("02_"+nom_archivo);
+grabar(nom_archivo, tabla);
+grabar("01_"+nom_archivo, tabla);
+grabar("02_"+nom_archivo, tabla);
 
 nom_archivo="OTRONOMBRE"
 console.log(nom_archivo);
