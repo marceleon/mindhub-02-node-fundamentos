@@ -15,7 +15,7 @@ for(let i=min; i<=max; i++){
     tabla = tabla.concat(fila, "\n");
 }
 
-let grabar = function(nom, txt) {
+let grabar = (nom, txt) => {
     let nombre=nom
 
     fs.writeFile(nombre, txt, (e) => { 

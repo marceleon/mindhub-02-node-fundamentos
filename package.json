@@ -1,0 +1,22 @@
+{
+  "name": "02-node-fundamentos",
+  "version": "1.0.0",
+  "description": "Base para Fundamentos de NODE",
+  "main": "apps-tarea5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marceleon/mindhub-02-node-fundamentos.git"
+  },
+  "author": "Marcelo LEON",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marceleon/mindhub-02-node-fundamentos/issues"
+  },
+  "homepage": "https://github.com/marceleon/mindhub-02-node-fundamentos#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
