@@ -18,5 +18,8 @@
   "homepage": "https://github.com/marceleon/mindhub-02-node-fundamentos#readme",
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
