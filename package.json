@@ -1,6 +1,6 @@
 {
   "name": "02-node-fundamentos",
-  "version": "1.0.0",
+  "version": "1.0.0-BETA",
   "description": "Base para Fundamentos de NODE",
   "main": "apps-tarea5.js",
   "scripts": {
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/marceleon/mindhub-02-node-fundamentos#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

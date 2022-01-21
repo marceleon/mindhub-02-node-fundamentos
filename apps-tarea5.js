@@ -13,9 +13,9 @@ console.log("Pasé parámetros?? ->"+ params.argv.slice(2, params.argv.length));
 
 let base = params.argv[2]; 
 
-if (base.substring(0,6).toLowerCase()=="--base" && base.length>6)  {
+if (base.substring(0,7).toLowerCase()=="--base=" && base.length>7)  {
     
-    let multi = base.substring(6,base.length);
+    let multi = base.substring(7,base.length);
 
     if (esNumero(parseInt(multi))) {
 

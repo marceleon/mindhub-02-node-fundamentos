@@ -3,7 +3,7 @@
 
 let fs = require('fs');
 
-let crear_tabla_en_txt = function (nro, ini=1, fin=10) {
+let crear_tabla_en_txt = function (nro, ini=1, fin=10, listar=false) {
 
     let tabla="";
 
