@@ -1,18 +1,18 @@
 
 /*Validando parámetros de entrada con Yargs*/
 
-/* NO ESTÁ TOMANDO EL VALOR DE ESTA FUNCION
+/* NO ESTÁ TOMANDO EL VALOR DE ESTA FUNCION*/
 let val_base = (v) => {
 
     if (isNaN(v)) 
-        throw  "El argumento ingresado NO es un número";
+        throw "El argumento ingresado NO es un número";
 
     if ((v)<1 || (v>20))
         throw "Debes colocar un valor de base entre 1 y 20";
     
     return true;
 };
-*/
+
 
 const crear_tabla_en_txt = require('./apps-tarea7-modulo');
 const arg = require("yargs")
@@ -29,12 +29,7 @@ const arg = require("yargs")
                  demandOption: false}
              }) 
     .check( (argv) => { 
-        v=(argv.b)     
-        if (isNaN(v)) 
-            throw  "El argumento ingresado NO es un número";
-        if ((v)<1 || (v>20))
-            throw "Debes colocar un valor de base entre 1 y 20";
-        return true;})
+        return val_base(argv.b); })
     .argv;
 
 crear_tabla_en_txt(arg.base, arg.l).then( resultado => console.log(resultado))
